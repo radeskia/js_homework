@@ -3,8 +3,8 @@
 //Самите броеви и нивната потенцијална позиција според големина
 let q, w, e, first, second, third;
 
-q = 3;
-w = 4;
+q = 1;
+w = 1;
 e = 3;
 
 //Прв тест, дали инпутот е бројка
@@ -27,17 +27,22 @@ if (typeof q == 'number' && typeof w == 'number' && typeof e == 'number') {
         first = q;
         second = w;
         third = e;
-    } else {
-        first = q;
+    } else if (e == q && e < w) {
+        first = w;
         second = q;
-        third = q;
+        third = e;
+    } else if (e == w && e < q) {
+        first = q;
+        second = w;
+        third = e;
     }
+
     //Трет тест, тестирање за прво, второ и трето место на листата по големина
     if (q > w && q > e) {
         first = q;
     } else if (w > q && w > e) {
         first = w;
-    } else {
+    } else if (e > q && e > w){
         first = e;
     }
 
@@ -45,7 +50,7 @@ if (typeof q == 'number' && typeof w == 'number' && typeof e == 'number') {
         second = q;
     } else if ((w > q && w < e) || (w > e && w < q)) {
         second = w;
-    } else {
+    } else if((e > q && e < w) || (e < q && e > w)){
         second = e;
     }
 
@@ -53,7 +58,7 @@ if (typeof q == 'number' && typeof w == 'number' && typeof e == 'number') {
         third = q;
     } else if (w < q && w < e) {
         third = w;
-    } else {
+    } else if ( e < q && e < w){
         third = e;
     }
 
@@ -62,7 +67,7 @@ if (typeof q == 'number' && typeof w == 'number' && typeof e == 'number') {
 }
 
 //Последен чекор, посебен случај ако трите броеви се исти, ако броевите на прво место се исти, ако броевите на второ место се исти и основниот случај - прво, второ и трето место
-if (first == second && second == third) {
+if (first === second && second === third) {
     console.log(`All numbers have the same value ${first}`);
 } else if (first == second) {
     console.log(`Both first place numbers have the same value ${first}, and second place is ${third}.`);
@@ -193,6 +198,6 @@ if (month == 'December' || month == 'January' || month == 'February') {
     console.log(`Summer's here!`);
 } else if (month == 'September' || month == 'October' || month == 'November') {
     console.log(`It's Autumn, but Winter is coming!`);
-} else{
+} else {
     console.log(`Not a month, please enter a month!`);
 }
