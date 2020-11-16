@@ -136,68 +136,16 @@ gradeA = 100;
 
 //Просечната оценка на целиот клас од 5 души
 classAverage = (David + Vinoth + Divya + Ishitha + Thomas) / 5;
-console.log(`The class average is ${classAverage} points`);
-
-
-//Оценување на секој ученик поединечно според бодовната скала
-if (David <= gradeF) {
-    console.log(`David's grade is F with ${David} points`);
-} else if (David <= gradeD) {
-    console.log(`David's grade is D with ${David} points`);
-} else if (David <= gradeC) {
-    console.log(`David's grade is C with ${David} points`);
-} else if (David <= gradeB) {
-    console.log(`David's grade is B with ${David} points`);
+if (classAverage <= gradeF) {
+    console.log(`The class average grade is F with ${classAverage} points.`);
+} else if (classAverage <= gradeD) {
+    console.log(`The class average grade is D with ${classAverage} points.`);
+} else if (classAverage <= gradeC) {
+    console.log(`The class average grade is C with ${classAverage} points.`);
+} else if (classAverage <= gradeB) {
+    console.log(`The class average grade is B with ${classAverage} points.`);
 } else {
-    console.log(`David's grade is A with ${David} points`);
-}
-
-if (Vinoth <= gradeF) {
-    console.log(`Vinoth's grade is F with ${Vinoth} points`);
-} else if (Vinoth <= gradeD) {
-    console.log(`Vinoth's grade is D with ${Vinoth} points`);
-} else if (Vinoth <= gradeC) {
-    console.log(`Vinoth's grade is C with ${Vinoth} points`);
-} else if (Vinoth <= gradeB) {
-    console.log(`Vinoth's grade is B with ${Vinoth} points`);
-} else {
-    console.log(`Vinoth's grade is A with ${Vinoth} points`);
-}
-
-if (Divya <= gradeF) {
-    console.log(`Divya's grade is F with ${Divya} points`);
-} else if (Divya <= gradeD) {
-    console.log(`Divya's grade is D with ${Divya} points`);
-} else if (Divya <= gradeC) {
-    console.log(`Divya's grade is C with ${Divya} points`);
-} else if (Divya <= gradeB) {
-    console.log(`Divya's grade is B with ${Divya} points`);
-} else {
-    console.log(`Divya's grade is A with ${Divya} points`);
-}
-
-if (Ishitha <= gradeF) {
-    console.log(`Ishitha's grade is F with ${Ishitha} points`);
-} else if (Ishitha <= gradeD) {
-    console.log(`Ishitha's grade is D with ${Ishitha} points`);
-} else if (Ishitha <= gradeC) {
-    console.log(`Ishitha's grade is C with ${Ishitha} points`);
-} else if (Ishitha <= gradeB) {
-    console.log(`Ishitha's grade is B with ${Ishitha} points`);
-} else {
-    console.log(`Ishitha's grade is A with ${Ishitha} points`);
-}
-
-if (Thomas <= gradeF) {
-    console.log(`Thomas's grade is F with ${Thomas} points`);
-} else if (Thomas <= gradeD) {
-    console.log(`Thomas's grade is D with ${Thomas} points`);
-} else if (Thomas <= gradeC) {
-    console.log(`Thomas's grade is C with ${Thomas} points`);
-} else if (Thomas <= gradeB) {
-    console.log(`Thomas's grade is B with ${Thomas} points`);
-} else {
-    console.log(`Thomas's grade is A with ${Thomas} points`);
+    console.log(`The class average grade is A with ${classAverage} points.`);
 }
 
 
