@@ -90,7 +90,7 @@ console.log(`The sum of all the person objects ages is ${ageSum}`);
 //12. Find the average of the years of the people.
 
 let ageAvg;
-ageAvg = (person.age + person2.age + person3.age) / 3;
+ageAvg = ageSum / 3;
 console.log(`The average of all people ages is ${ageAvg}`);
 
 
