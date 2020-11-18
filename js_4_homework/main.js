@@ -153,6 +153,11 @@ if (person.age > person2.age && person.age > person3.age) {
     middle = person3.firstName;
     youngest = person.firstName;
     console.log(`${oldest} and ${middle} have the same age and are older than ${youngest}.`);
+} else if (person.age == person3.age && person2.age < person.age) {
+    oldest = person3.firstName;
+    middle = person.firstName;
+    youngest = person2.firstName;
+    console.log(`${oldest} and ${middle} have the same age and are older than ${youngest}.`);
 } else if (person.age == person2.age && person.age == person3.age) {
     console.log(`All three people are the same age!`);
 } else {
