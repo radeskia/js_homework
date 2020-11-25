@@ -1,6 +1,4 @@
 
-// 6. Write a function to return the last n elements from a given array (manually and  using .reverse array method)
-// ** n and the array should be parameters in the function
 
 
 
@@ -66,3 +64,18 @@ function areaCirc(rad) {
 };
 
 console.log(`Плоштина на круг - ${areaCirc(7)}`);
+
+
+// 6. Write a function to return the last n elements from a given array (manually and  using .reverse array method)
+// ** n and the array should be parameters in the function
+
+let bigArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
+function returnLastFew(arr, n) {
+    let newArr = arr.reverse()
+    for (let i = 0; i < n; i++) {
+        console.log(newArr[i]);        
+    }
+};
+
+returnLastFew(bigArray, 3); 
